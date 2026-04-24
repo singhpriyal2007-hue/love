@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Priyal ❤️</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: #fff;
+  text-align: center;
+}
+.page {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.active {
+  display: flex;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  color: #ff4f81;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 2.7em;
+}
+p {
+  font-size: 1.3em;
+  max-width: 600px;
+}
+img {
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body><div id="page1" class="page active">
+  <h1>Hey Priyal ❤️</h1>
+  <p>I made something just for you…</p>
+  <button onclick="nextPage(2)">Tap here 💖</button>
+</div><div id="page2" class="page">
+  <h1>You Are So Beautiful 😍</h1>
+  <img src="photo1.jpg" alt="Priyal">
+  <p>Every time I see you, I just forget everything else. You’re seriously the most beautiful girl to me.</p>
+  <button onclick="nextPage(3)">Next ➡️</button>
+</div><div id="page3" class="page">
+  <h1>Us 💑</h1>
+  <img src="photo2.jpg" alt="Us">
+  <p>This picture means so much to me. Being with you feels right, simple, and perfect.</p>
+  <button onclick="nextPage(4)">Next ➡️</button>
+</div><div id="page4" class="page">
+  <h1>Why I Love You 💕</h1>
+  <p>
+  • Your smile 😊<br>
+  • Your innocence 💗<br>
+  • The way you care 🫶<br>
+  • The way you make me feel special ❤️<br>
+  • Everything about YOU 💫
+  </p>
+  <button onclick="nextPage(5)">Next ➡️</button>
+</div><div id="page5" class="page">
+  <h1>One Thing 💍</h1>
+  <p>I just want you to stay with me like this… always. No matter what happens, I’m always yours.</p>
+  <button onclick="nextPage(6)">Last Page 💖</button>
+</div><div id="page6" class="page">
+  <h1>I Love You Priyal ❤️</h1>
+  <p>More than words can ever explain… forever and always 💫</p>
+</div><script>
+function nextPage(pageNumber) {
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.remove('active'));
+  document.getElementById('page' + pageNumber).classList.add('active');
+}
+</script></body>
+</html>
